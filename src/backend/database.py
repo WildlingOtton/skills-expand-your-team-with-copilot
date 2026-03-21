@@ -165,7 +165,7 @@ initial_activities = {
         "participants": ["william@mergington.edu", "jacob@mergington.edu"]
     },
     "Manga Maniacs": {
-        "description": "Explore and discuss manga series, create fan art, and learn about Japanese comics culture",
+        "description": "Dive into the world of manga! From shonen action to shojo romance, explore iconic series, debate story arcs, and unleash your inner mangaka with fan art and storytelling workshops",
         "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
         "schedule_details": {
             "days": ["Wednesday"],
