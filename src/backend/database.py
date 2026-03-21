@@ -166,13 +166,13 @@ initial_activities = {
     },
     "Manga Maniacs": {
         "description": "Dive into the world of manga! From shonen action to shojo romance, explore iconic series, debate story arcs, and unleash your inner mangaka with fan art and storytelling workshops",
-        "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+        "schedule": "Tuesdays, 5:00 PM - 6:30 PM",
         "schedule_details": {
-            "days": ["Wednesday"],
-            "start_time": "15:30",
-            "end_time": "17:00"
+            "days": ["Tuesday"],
+            "start_time": "17:00",
+            "end_time": "18:30"
         },
-        "max_participants": 20,
+        "max_participants": 25,
         "participants": ["yuki@mergington.edu", "hana@mergington.edu"]
     }
 }
