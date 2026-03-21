@@ -173,7 +173,8 @@ initial_activities = {
             "end_time": "20:00"
         },
         "max_participants": 15,
-        "participants": []
+        "participants": [],
+        "contact_person": "Chandler Foster"
     }
 }
 
