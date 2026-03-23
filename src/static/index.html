@@ -7,9 +7,20 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Animated Git branch background -->
+    <canvas id="git-bg" aria-hidden="true"></canvas>
+
     <header>
       <h1>Mergington High School</h1>
       <h2>Extracurricular Activities</h2>
+      <!-- School mascots from octodex.github.com -->
+      <div class="mascot-banner" aria-label="School mascots">
+        <img src="https://octodex.github.com/images/original.png" alt="Octocat" title="Original Octocat" loading="lazy" />
+        <img src="https://octodex.github.com/images/class-act.png" alt="Class Act Octocat" title="Class Act" loading="lazy" />
+        <img src="https://octodex.github.com/images/codercat.jpg" alt="Coder Octocat" title="Coder Cat" loading="lazy" />
+        <img src="https://octodex.github.com/images/nyantocat.gif" alt="Nyan Octocat" title="Nyan Tocat" loading="lazy" />
+        <img src="https://octodex.github.com/images/octobiwan.jpg" alt="Octobiwan" title="Octobiwan" loading="lazy" />
+      </div>
       <div id="user-controls">
         <button id="dark-mode-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
         <div id="user-status">
@@ -170,5 +181,6 @@
     </div>
 
     <script src="app.js"></script>
+    <script src="git-bg.js"></script>
   </body>
 </html>
