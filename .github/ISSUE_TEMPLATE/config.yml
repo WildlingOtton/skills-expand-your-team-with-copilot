@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Development Guide
+    url: https://github.com/WildlingOtton/skills-expand-your-team-with-copilot/blob/main/docs/how-to-develop.md
+    about: Read the development guide for technical setup and contribution instructions.

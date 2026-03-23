@@ -1,0 +1,57 @@
+name: Feature Request
+description: Suggest a new feature or improvement for the activities website.
+title: "Feature Request: [Short Description]"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to suggest a new feature or improvement for the Mergington High School activities website. The more detail you provide, the easier it is to implement your idea correctly.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the situation or problem this feature would address.
+      placeholder: e.g. Students currently can't tell which activities are suitable for beginners versus advanced students, so they sometimes sign up for activities that are too difficult.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Describe the feature you'd like
+      description: Explain clearly what you want the website to do or look like after the change.
+      placeholder: e.g. Add a difficulty level label (Beginner, Intermediate, Advanced) on each activity card so students can choose appropriately.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the specific things that must be true for this feature to be considered complete.
+      placeholder: |
+        - Each activity card shows a difficulty label if one is set
+        - Teachers can specify a difficulty level when adding or updating an activity
+        - Students can filter activities by difficulty level
+        - Activities without a difficulty level are shown to everyone
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: How important is this to you?
+      options:
+        - Nice to have
+        - Important
+        - Urgent
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information, examples, or context that might help when building this feature.

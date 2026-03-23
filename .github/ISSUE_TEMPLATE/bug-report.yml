@@ -1,0 +1,60 @@
+name: Bug Report
+description: Report something on the website that is broken or not working correctly.
+title: "Bug: [Short Description]"
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to report a bug or problem with the Mergington High School activities website. Please provide as much detail as possible so the issue can be found and fixed quickly.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What went wrong?
+      description: Describe what is broken or not working as expected.
+      placeholder: e.g. When I click the "Register" button for Chess Club, nothing happens and no confirmation appears.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+      description: Describe what you expected to happen instead.
+      placeholder: e.g. The student should be registered and their name should appear in the participants list.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the steps someone can follow to see the problem.
+      placeholder: |
+        1. Go to the activities page
+        2. Click on Chess Club
+        3. Enter a student email and click Register
+        4. Nothing happens
+    validations:
+      required: true
+
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser were you using when the problem occurred?
+      options:
+        - Chrome
+        - Firefox
+        - Safari
+        - Edge
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other details that might help, such as screenshots, error messages, or how often this happens.
