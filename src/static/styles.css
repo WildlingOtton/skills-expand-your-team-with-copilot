@@ -1,9 +1,9 @@
 /* Color palette */
 :root {
-  /* Primary colors */
-  --primary: #1a237e;
-  --primary-light: #534bae;
-  --primary-dark: #000051;
+  /* Primary colors - Mergington High School colors: white and lime green */
+  --primary: #4a9e0f;
+  --primary-light: #6abf2a;
+  --primary-dark: #2e6b00;
   --primary-text: #ffffff;
 
   /* Secondary colors */
@@ -34,9 +34,9 @@
 
 /* Dark mode color overrides */
 body.dark-mode {
-  --primary: #7986cb;
-  --primary-light: #aab6fb;
-  --primary-dark: #49599a;
+  --primary: #6abf2a;
+  --primary-light: #9de053;
+  --primary-dark: #3d7c00;
   --primary-text: #ffffff;
 
   --secondary: #ffa040;
@@ -225,8 +225,8 @@ section h3 {
   position: absolute;
   top: 8px;
   right: 8px;
-  background: #e8eaf6;
-  color: #3949ab;
+  background: #e8f5e0;
+  color: #2e6b00;
   font-size: 0.65rem;
   font-weight: bold;
   padding: 2px 6px;
@@ -724,8 +724,8 @@ body.dark-mode .search-box input {
 }
 
 body.dark-mode .activity-tag {
-  background: #2d3060;
-  color: #aab6fb;
+  background: #1a3a00;
+  color: #9de053;
 }
 
 body.dark-mode .modal-content {
@@ -739,4 +739,38 @@ body.dark-mode textarea {
   background-color: #2a2a2a;
   color: var(--text-primary);
   border-color: var(--border);
+}
+
+/* Git branch background canvas */
+#git-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Mascot banner */
+.mascot-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0 4px;
+  flex-wrap: wrap;
+}
+
+.mascot-banner img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transition: transform 0.2s ease;
+}
+
+.mascot-banner img:hover {
+  transform: scale(1.15);
 }
