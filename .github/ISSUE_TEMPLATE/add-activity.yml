@@ -1,0 +1,85 @@
+name: Add New Activity
+description: Request a new extracurricular activity to be added to the website.
+title: "Add New Activity: [Activity Name]"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request a new extracurricular activity be added to the Mergington High School activities website. Please fill in all required fields so the change can be made without needing to ask you for more information.
+
+  - type: input
+    id: activity-name
+    attributes:
+      label: Activity Name
+      description: The full name of the activity as it should appear on the website.
+      placeholder: e.g. Photography Club
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Activity Description
+      description: A short description of what the activity involves. This will be shown on the activity card.
+      placeholder: e.g. Learn photography techniques, edit photos, and showcase your work in the school gallery.
+    validations:
+      required: true
+
+  - type: input
+    id: schedule
+    attributes:
+      label: Schedule (display text)
+      description: The schedule as it should appear on the website.
+      placeholder: e.g. Wednesdays, 3:30 PM - 5:00 PM
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: days
+    attributes:
+      label: Days of the Week
+      description: Which days does this activity meet?
+      options:
+        - label: Monday
+        - label: Tuesday
+        - label: Wednesday
+        - label: Thursday
+        - label: Friday
+        - label: Saturday
+        - label: Sunday
+    validations:
+      required: true
+
+  - type: input
+    id: start-time
+    attributes:
+      label: Start Time (24-hour format)
+      description: The time the activity starts, in 24-hour format.
+      placeholder: e.g. 15:30
+    validations:
+      required: true
+
+  - type: input
+    id: end-time
+    attributes:
+      label: End Time (24-hour format)
+      description: The time the activity ends, in 24-hour format.
+      placeholder: e.g. 17:00
+    validations:
+      required: true
+
+  - type: input
+    id: max-participants
+    attributes:
+      label: Maximum Number of Participants
+      description: The maximum number of students that can sign up for this activity.
+      placeholder: e.g. 20
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other information that may be helpful, such as which teacher supervises the activity or special requirements.

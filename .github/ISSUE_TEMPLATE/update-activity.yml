@@ -1,0 +1,87 @@
+name: Update Existing Activity
+description: Request changes to the details of an existing extracurricular activity.
+title: "Update Activity: [Activity Name]"
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form to request an update to an existing activity on the Mergington High School activities website. Please fill in the activity name and describe exactly what needs to change.
+
+  - type: input
+    id: activity-name
+    attributes:
+      label: Activity Name
+      description: The exact name of the activity you want to update, as it currently appears on the website.
+      placeholder: e.g. Chess Club
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: what-to-update
+    attributes:
+      label: What needs to be updated?
+      description: Select all that apply.
+      options:
+        - label: Activity description
+        - label: Schedule (days and/or times)
+        - label: Maximum number of participants
+    validations:
+      required: true
+
+  - type: textarea
+    id: new-description
+    attributes:
+      label: New Description (if changing)
+      description: Provide the updated description text. Leave blank if not changing.
+      placeholder: e.g. Learn advanced chess strategies and compete in regional tournaments.
+
+  - type: input
+    id: new-schedule-text
+    attributes:
+      label: New Schedule (display text, if changing)
+      description: The new schedule as it should appear on the website. Leave blank if not changing.
+      placeholder: e.g. Mondays and Wednesdays, 3:15 PM - 4:45 PM
+
+  - type: checkboxes
+    id: new-days
+    attributes:
+      label: New Days of the Week (if changing schedule)
+      description: Select the new meeting days. Leave all unchecked if not changing.
+      options:
+        - label: Monday
+        - label: Tuesday
+        - label: Wednesday
+        - label: Thursday
+        - label: Friday
+        - label: Saturday
+        - label: Sunday
+
+  - type: input
+    id: new-start-time
+    attributes:
+      label: New Start Time (24-hour format, if changing)
+      description: Leave blank if not changing.
+      placeholder: e.g. 15:15
+
+  - type: input
+    id: new-end-time
+    attributes:
+      label: New End Time (24-hour format, if changing)
+      description: Leave blank if not changing.
+      placeholder: e.g. 16:45
+
+  - type: input
+    id: new-max-participants
+    attributes:
+      label: New Maximum Number of Participants (if changing)
+      description: Leave blank if not changing.
+      placeholder: e.g. 15
+
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason for Change
+      description: Briefly explain why this update is needed.
+    validations:
+      required: true
